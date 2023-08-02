@@ -4,62 +4,93 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="main-header">
-      <nav class="novigation">
-        <a class="novigation-logo" href="index.html">
-          <img class="header-logo-img" src="images/logo-header.svg" width="145" height="36"
-            alt="Логотип магазина Девайс.">
-        </a>
-        <div class="user-menu">
-          <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="user-field" type="search" placeholder="Поиск по сайту">
-            <button class="user-button">Найти</button>
-          </form>
 
-          <button class="user-menu-button" type="button">Войти</button>
-          <button class="user-menu-button" type="button">Сравнить</button>
-          <button class="user-menu-button" type="button">Корзина</button>
-          </ul>
-        </div>
+      <a class="novigation-logo" href="index.html">
+        <img class="header-logo-image" src="images/logo-header.svg" width="145" height="36"
+          alt="Логотип магазина Девайс.">
+      </a>
 
+      <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="user-search">Поиск по сайту</label>
+        <input class="user-field" id="user-search" type="search" placeholder="Поиск по сайту">
+        <button class="form-user-button">Найти</button>
+      </form>
+      <nav class="novigation-user">
+        <button class="novigation-user-button" type="button">Войти</button>
+        <button class="novigation-user-button" type="button">Сравнить</button>
+        <button class="novigation-user-button" type="button">Корзина</button>
+        </ul>
+      </nav>
+
+      <nav class="novigation-catalog">
         <div class="header-catalog-wrapper">
           <button class="header-catalog" type="button">Каталог товаров</button>
+          <div class="catalog-group">
+            <ul class="catalog-list-1">
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="catalog-list-2">
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="catalog-list-3">
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Доставка</a>
+      <nav class="novigation-servis">
+        <ul class="novigation-servis-list">
+          <li class="novigation-servis-item">
+            <a class="novigation-servis-link" href="#">Доставка</a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Гарантия</a>
+          <li class="novigation-servis-item">
+            <a class="novigation-servis-link" href="#">Гарантия</a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Контакты</a>
+          <li class="novigation-servis-item">
+            <a class="novigation-servis-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <h1 class="header--inner-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Каталог товаров</a></li>
-          <li class="breadcrumbs-item">Моноподы для селфи</li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
         </ul>
       </header>
 
       <section class="catalog-monopod">
         <h2 class="visually-hidden">Каталог моноподов</h2>
-        <h3 class="filter-catalog">Фильтр</h3>
+        <h3 class="filter-title filter-catalog">Фильтр</h3>
         <form class="filter-monopod" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="monopod-filter-group">
-            <legend class="monopod-filter-title">Стоимость</legend>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
             <div class="range">
               <div class="range-scale">
                 <div class="range-bar">
@@ -77,10 +108,10 @@
             </div>
           </fieldset>
 
-          <fieldset class="monopod-filter-group filter-group-color">
-            <legend class="monopod-filter-title">Цвет</legend>
-            <ul class="monopod-filter-list">
-              <li class="monopod-filter-item">
+          <fieldset class="catalog-filter-group filter-group-color">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                   <span class="control-mark"></span>
@@ -117,10 +148,10 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="monopod-filter-group filter-group-bluetooth">
-            <legend class="monopod-filter-title">Bluetooth</legend>
-            <ul class="monopod-filter-list">
-              <li class="monopod-filter-item">
+          <fieldset class="catalog-filter-group filter-group-bluetooth">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
                 <label class="control control-radio">
                   <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
                   <span class="control-label">Есть</span>
@@ -135,12 +166,10 @@
 
             </ul>
           </fieldset>
-
-
           <button class="details-link" type="submit">Показать</button>
         </form>
 
-        <h3 class="select-filter">Сортировка</h3>
+        <h3 class="filter-title select-filter">Сортировка</h3>
         <div class="select-sorting-type">
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Популярные</option>
@@ -206,7 +235,7 @@
             <a class="pogination-link" href="#">15</a>
           </li>
           <li class="pogination-item">
-            <a class="pogination-link pogination-next" href="#">Вперед</a>
+            <a class="pogination-link pogination-next" href="#">Вперёд</a>
           </li>
         </ul>
       </section>
