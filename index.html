@@ -24,10 +24,9 @@
             <button class="form-user-button">Найти</button>
           </form>
           <nav class="novigation-user">
-            <button class="novigation-user-button" type="button">Войти</button>
+            <button class="novigation-user-button novigation-user-enter" type="button">Войти</button>
             <button class="novigation-user-button" type="button">Сравнить</button>
             <button class="novigation-user-button" type="button">Корзина</button>
-            </ul>
           </nav>
 
         </div>
@@ -99,7 +98,7 @@
             <h3 class="promo-title">Порхает как бабочка, жалит как пчела</h3>
             <p class="about-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
               под стандартную камеру.</p>
-            <a class="details-link" href="#">Подробнее</a>
+            <a class="details-link details-link-promo" href="#">Подробнее</a>
             <table class="options-slider">
               <tr class="options-row">
                 <td>800 м</td>
@@ -236,42 +235,46 @@
 
       <section class="service">
         <h2 class="visually-hidden">Сервисы</h2>
-        <div class="service-color">
-          <div class="servise-active-container">
+        <div class="servis-container">
+          <div class="servise-active">
             <ul class="service-list">
-              <li class="service-item">
-                <button class="service-button details-link button-active" type="button">Доставка</button>
+              <li class="service-item service-item-active">
+                <button class="service-button service-button-active" type="button">Доставка</button>
               </li>
               <li class="service-item">
-                <button class="service-button details-link" type="button">Гарантия</button>
+                <button class="service-button" type="button">Гарантия</button>
               </li>
               <li class="service-item">
-                <button class="service-button details-link" type="button">Кредит</button>
+                <button class="service-button" type="button">Кредит</button>
               </li>
             </ul>
             <div class="delivery-describe-wraper">
               <h3 class="delivery-title">Доставка</h3>
-              <p class="delivery-describe">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
+              <p class="delivery-describe">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
+                совершенно
                 бесплатно! Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </div>
 
-          <div class="servis_non_active">
+          <div class="servis-non-active">
             <h3 class="delivery-title">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар,
-              не дом, конечно же.</p>
+            <p class="delivery-describe">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+              переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
 
             <h3 class="delivery-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            <p class="delivery-describe">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия
               кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
 
-        <div class="special-block">
-          <p class="special-order">Доставим редкий товар под заказ</p>
-        </div>
       </section>
+
+      <div class="special-block">
+        <p class="special-order">Доставим редкий товар под заказ</p>
+      </div>
+
 
       <section class="about">
         <div class="about-container">
@@ -292,13 +295,12 @@
 
           <div class="about-contact">
             <h3 class="section-title">Контакты</h3>
-            <p class="contact-describe">Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить
+            <p class="about-describe">Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить
               работоспособность покупки. </p>
-            <address class="contacts-address">Интернет-магазин «Девайс»
-              <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
+            <h4 class="contact-title">Интернет-магазин «Девайс»</h4>
+            <address class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
             <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <p class="schedule">Время работы</p>
+            <h4 class="contact-title">Время работы</h4>
             <ul class="schedule-list">
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -309,22 +311,26 @@
       </section>
 
       <section class="subscribe">
-        <div class="subscribe-container">
-          <h2 class="visually-hidden">Подписка</h2>
+        <div class="subscribe-total-wraper">
 
-          <h3 class="section-title">Подпишитесь<br> на рассылку</h3>
-          <p>Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br>
-            спецпредложения и вот это вот всё.</p>
-        </div>
+          <div class="subscribe-container">
+            <h2 class="visually-hidden">Подписка</h2>
 
-        <div class="subscribe-form-wraper">
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-email">Email</label>
-            <input class="subscribe-field" type="text" name="appointment-date" placeholder="Ваш e-mail"
-              id="subscribe-email" required>
-            <button class="button subscribe-button" type="submit">Подписаться</button>
-          </form>
-          <div class="free">Это бесплатно</div>
+            <h3 class="section-title">Подпишитесь<br> на рассылку</h3>
+            <p class="subscribe-content">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+              распаковками, а также акции,<br>
+              спецпредложения и вот это вот всё.</p>
+          </div>
+
+          <div class="subscribe-form-wraper">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="subscribe-email">Email</label>
+              <input class="subscribe-field" type="text" name="appointment-date" placeholder="Ваш e-mail"
+                id="subscribe-email" required>
+              <button class="button subscribe-button" type="submit">Подписаться</button>
+            </form>
+            <div class="free">Это бесплатно</div>
+          </div>
         </div>
       </section>
 
@@ -355,7 +361,7 @@
             </li>
           </ul>
 
-          <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
 
         <div class="footer-social-wraper">
