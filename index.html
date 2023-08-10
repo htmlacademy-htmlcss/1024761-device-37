@@ -24,18 +24,26 @@
             <button class="form-user-button">Найти</button>
           </form>
           <nav class="novigation-user">
-            <button class="novigation-user-button novigation-user-enter" type="button">Войти</button>
-            <button class="novigation-user-button" type="button">Сравнить</button>
-            <button class="novigation-user-button" type="button">Корзина</button>
+            <a class="user-control novigation-user-enter" href="#">Войти</a>
           </nav>
-
+          <nav class="user-control-wraper">
+            <a class="user-control control-compare" href="#">Сравнить</a>
+            <a class="user-control control-bag" href="#">
+              <span>Корзина</span>
+              <div class="background-element">
+                <span class="novigation-user-element">2</span>
+              </div>
+            </a>
+          </nav>
         </div>
+
         <div class="novigation-container">
           <nav class="novigation-catalog">
             <div class="header-catalog-wrapper">
-              <button class="header-catalog" type="button">Каталог товаров</button>
+              <label class="header-catalog" for="catalog-product">Каталог товаров</label>
+              <input class="visually-hidden" id="catalog-product" type="checkbox">
               <div class="catalog-group">
-                <ul class="catalog-list-1">
+                <ul class="catalog-column-1">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Виртуальная реальность</a>
                   </li>
@@ -46,7 +54,7 @@
                     <a class="catalog-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
-                <ul class="catalog-list-2">
+                <ul class="catalog-column-2">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Фитнес-браслеты</a>
                   </li>
@@ -54,7 +62,7 @@
                     <a class="catalog-link" href="#">Умные часы</a>
                   </li>
                 </ul>
-                <ul class="catalog-list-3">
+                <ul class="catalog-column-3">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Квадрокоптеры</a>
                   </li>
@@ -84,104 +92,116 @@
       <h1 class="visually-hidden">Магазин электронной техники Device</h1>
       <section class="promo">
         <h2 class="visually-hidden">Товары дня</h2>
-
-        <div class="promo-slider">
-          <div class="image-button-wraper">
-            <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560"
-              alt="Квадрокоптер с мощным лазером.">
-            <button class="button-slider slider-prew" type="button">
-              <span class="visually-hidden">Предыдущий товар</span></button>
-            <button class="button-slider slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span></button>
+        <div class="slider-container">
+          <div class="promo-slider">
+            <div class="image-button-wraper">
+              <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560"
+                alt="Квадрокоптер с мощным лазером.">
+              <div class="button-slider-wraper">
+                <button class="button-slider slider-prew" type="button">
+                  <span class="visually-hidden">Предыдущий товар</span>
+                </button>
+                <button class="button-slider slider-next" type="button">
+                  <span class="visually-hidden">Следующий товар</span>
+                </button>
+              </div>
+            </div>
+            <div class="promo-discribe">
+              <span class="slide-number">01</span>
+              <h3 class="promo-title">Порхает как бабочка, жалит как пчела</h3>
+              <p class="about-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным
+                под стандартную камеру.</p>
+              <a class="details-link details-link-promo" href="#">Подробнее</a>
+              <table class="options-slider">
+                <tr class="options-row">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="options-row">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
           </div>
+
+          <ol class="slider-pogination">
+            <li class="slider-pogination-item">
+              <button class="slider-pogination-button slider-pogination-button-current" type="button">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+            </li>
+
+            <li class="slider-pogination-item">
+              <button class="slider-pogination-button" type="button">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+            </li>
+
+            <li class="slider-pogination-item">
+              <button class="slider-pogination-button" type="button">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </section>
+      </div>
+
+      <div class="slids-non-active">
+        <div class="promo-slider">
+          <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+          <button class="button-slider slider-prew" type="button">
+            <span class="visually-hidden">Предыдущий товар</span></button>
+          <button class="button-slider slider-next" type="button">
+            <span class="visually-hidden">Следующий товар</span></button>
           <div class="promo-discribe">
-            <h3 class="promo-title">Порхает как бабочка, жалит как пчела</h3>
-            <p class="about-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-              под стандартную камеру.</p>
-            <a class="details-link details-link-promo" href="#">Подробнее</a>
-            <table class="options-slider">
-              <tr class="options-row">
-                <td>800 м</td>
-                <td>50 м</td>
+            <span class="slide-number">02</span>
+            <h3 class="promo-title">Худеем правильно!</h3>
+            <p class="about-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+              соблюдать диету.</p>
+            <a class="details-link" href="#">Подробнее</a>
+            <table class="options-slider-2">
+              <tr class="options-row-2">
+                <td>48 ч</td>
               </tr>
-              <tr class="options-row">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+              <tr class="options-row-2">
+                <td>Без подзарядки</td>
               </tr>
             </table>
           </div>
         </div>
 
-        <div class="slids-non-active">
-          <div class="promo-slider">
-            <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-            <button class="button-slider slider-prew" type="button">
-              <span class="visually-hidden">Предыдущий товар</span></button>
-            <button class="button-slider slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span></button>
-            <div class="promo-discribe">
-              <h3 class="promo-title">Худеем правильно!</h3>
-              <p class="about-promo">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-                соблюдать диету.</p>
-              <a class="details-link" href="#">Подробнее</a>
-              <table class="options-slider-2">
-                <tr class="options-row-2">
-                  <td>48 ч</td>
-                </tr>
-                <tr class="options-row-2">
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-
-          <div class="promo-slider">
-            <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Фитнес-браслет.">
-            <button class="button-slider slider-prew" type="button">
-              <span class="visually-hidden">Предыдущий товар</span></button>
-            <button class="button-slider slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span></button>
-            <div class="promo-discribe">
-              <h3 class="promo-title">Делай селфи, как Бен Стиллер!</h3>
-              <p class="about-promo">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-                метров длиной и весом всего 5 кг.</p>
-              <a class="details-link" href="#">Подробнее</a>
-              <table class="options-slider-3">
-                <tr class="options-row-3">
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-                <tr class="options-row-3">
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал палки</td>
-                </tr>
-              </table>
-            </div>
+        <div class="promo-slider">
+          <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Фитнес-браслет.">
+          <button class="button-slider slider-prew" type="button">
+            <span class="visually-hidden">Предыдущий товар</span></button>
+          <button class="button-slider slider-next" type="button">
+            <span class="visually-hidden">Следующий товар</span></button>
+          <div class="promo-discribe">
+            <span class="slide-number">03</span>
+            <h3 class="promo-title">Делай селфи, как Бен Стиллер!</h3>
+            <p class="about-promo">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+              метров длиной и весом всего 5 кг.</p>
+            <a class="details-link" href="#">Подробнее</a>
+            <table class="options-slider-3">
+              <tr class="options-row-3">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="options-row-3">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал палки</td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
 
-        <ol class="slider-pogination">
-          <li class="slider-pogination-item">
-            <button class="slider-pogination-button slider-pogination-button-current" type="button">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
-          </li>
 
-          <li class="slider-pogination-item">
-            <button class="slider-pogination-button" type="button">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
-          </li>
-
-          <li class="slider-pogination-item">
-            <button class="slider-pogination-button" type="button">
-              <span class="visually-hidden">Слайд 3</span>
-            </button>
-          </li>
-        </ol>
-      </section>
 
       <section class="category">
         <h2 class="visually-hidden">Категории товаров</h2>
