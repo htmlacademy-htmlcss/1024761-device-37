@@ -668,8 +668,40 @@ body {
 }
 
 
-.describe-item {
-  width: 490px;
+.item-delivery {
+  background-image: url(../images/service-man.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 204px;
+  min-height: 164px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-garant {
+  background-image: url(../images/service-garant.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 239px;
+  min-height: 195px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-credit {
+  background-image: url(../images/service-credit.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 204px;
+  min-height: 188px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item-title {
@@ -684,6 +716,7 @@ body {
 
 .item-text {
   margin: 0;
+  width: 490px;
 }
 
 .service-describe-wraper {
@@ -702,6 +735,20 @@ body {
   background-color: #f0f0f0;
   width: 1160px;
   margin: 0 auto;
+  display: flex;
+  margin-bottom: 70px;
+  align-items: center;
+
+}
+
+.special-icon {
+  width: 125px;
+  align-self: center;
+  background-color: #ffe17f;
+  background-image: url(../images/car.svg);
+  background-repeat: no-repeat;
+  min-height: 100px;
+  background-position: center;
 }
 
 .special-order {
@@ -710,16 +757,30 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
+  line-height: 20px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-bottom: 70px;
+  margin: 0;
+  width: 910px;
 }
 
+.information {
+  width: 125px;
+  display: flex;
+  justify-content: center;
+}
 
+.info-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.50);
+  border-radius: 50%;
+
+}
 .about-container {
   display: flex;
   margin: 0 auto;
@@ -727,6 +788,32 @@ body {
   justify-content: space-between;
   padding-top: 47px;
   margin-bottom: 70px;
+}
+
+.about-company {
+  position: relative;
+}
+
+.about-company::before {
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  top: -47px;
+}
+
+.about-contact {
+  position: relative;
+}
+
+.about-contact::before {
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  top: -47px;
 }
 
 .about-describe {
@@ -746,18 +833,21 @@ body {
 }
 
 .about-list {
-  margin: 0;
   margin-bottom: 30px;
   padding-left: 34px;
 }
 
 .about-item {
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -0.36px;
-  color: #000000;
-  margin-bottom: 19px;
-  list-style-type: none;
+  color: #FFC700;
+}
+
+.item-text {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+
 }
 
 .about-item:last-child {
@@ -811,7 +901,7 @@ body {
   outline-offset: -5px;
 }
 
-  .subscribe-container {
+.subscribe-container {
   display: flex;
   margin: 0 auto;
   width: 1160px;
