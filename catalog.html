@@ -23,20 +23,28 @@
             <input class="user-field" id="user-search" type="search" placeholder="Поиск по сайту">
             <button class="form-user-button">Найти</button>
           </form>
-          <nav class="novigation-user">
-            <button class="novigation-user-button novigation-user-enter" type="button">Войти</button>
-            <button class="novigation-user-button" type="button">Сравнить</button>
-            <button class="novigation-user-button" type="button">Корзина</button>
-            </ul>
+          <nav class="novigation-user-catalog">
+            <a class="user-control novigation-user-name" href="#">Коля Петухов</a>
+            <a class="user-control novigation-user-exit" href="#">Выйти</a>
           </nav>
-
+          <nav class="user-control-wraper">
+            <a class="user-control control-compare" href="#">Сравнить</a>
+            <a class="user-control control-bag" href="#">
+              <span>Корзина</span>
+              <div class="background-element">
+                <span class="novigation-user-element">2</span>
+              </div>
+            </a>
+          </nav>
         </div>
+
         <div class="novigation-container">
           <nav class="novigation-catalog">
             <div class="header-catalog-wrapper">
-              <button class="header-catalog" type="button">Каталог товаров</button>
+              <label class="header-catalog" for="catalog-product">Каталог товаров</label>
+              <input class="visually-hidden" id="catalog-product" type="checkbox">
               <div class="catalog-group">
-                <ul class="catalog-list-1">
+                <ul class="catalog-column-1">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Виртуальная реальность</a>
                   </li>
@@ -47,7 +55,7 @@
                     <a class="catalog-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
-                <ul class="catalog-list-2">
+                <ul class="catalog-column-2">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Фитнес-браслеты</a>
                   </li>
@@ -55,7 +63,7 @@
                     <a class="catalog-link" href="#">Умные часы</a>
                   </li>
                 </ul>
-                <ul class="catalog-list-3">
+                <ul class="catalog-column-3">
                   <li class="catalog-item">
                     <a class="catalog-link" href="#">Квадрокоптеры</a>
                   </li>
@@ -97,7 +105,6 @@
 
             <h2 class="visually-hidden">Каталог моноподов</h2>
             <h3 class="filter-title filter-catalog">Фильтр</h3>
-
             <form class="filter-monopod" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
@@ -107,14 +114,15 @@
                       <button type="button" class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-
                       <button type="button" class="range-toggle toggle-max">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
-                      <span class="min-price">От 0</span>
-                      <span class="max-price">До 5000</span>
                     </div>
                   </div>
+                </div>
+                <div class="price-wraper">
+                  <span class="min-price">От 0</span>
+                  <span class="max-price">До 5000</span>
                 </div>
               </fieldset>
 
@@ -123,36 +131,35 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="black" checked>
+
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="white" checked>
+
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="blue">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="blue">
+
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="red">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="red">
+
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="pink">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="pink">
                       <span class="control-label">Розовый</span>
                     </label>
                   </li>
@@ -176,7 +183,7 @@
 
                 </ul>
               </fieldset>
-              <button class="details-link" type="submit">Показать</button>
+              <button class="details-link filter-link" type="submit">Показать</button>
             </form>
           </div>
 
@@ -191,11 +198,34 @@
                   <option value="expensive">Дорогие</option>
                 </select>
               </div>
-              <div class="button-view">
-                <a class="button-top" href="">Кнопка</a>
-                <span class="visually-hidden">Начать с более популярных</span>
-                <a class="button-bottom" href="">Кнопка</a>
-                <span class="visually-hidden">Начать с менее популярных</span>
+              <div class="button-view-wraper">
+                <a class="button-view-link button-top" href="#">
+                  <span class="visually-hidden">Начать с более популярных</span>
+                  <svg class="button-view-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2" clip-path="url(#clip0_38602_677)">
+                      <path d="M15 10L20.5 20H9.5" fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_38602_677">
+                        <rect width="11" height="10" fill="white" transform="translate(9.5 10)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a class="button-view-link button-bottom" href="#">
+                  <span class="visually-hidden">Начать с менее популярных</span>
+                  <svg class="button-view-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2" clip-path="url(#clip0_38919_680)">
+                    <path d="M15 20L9.5 10L20.5 10" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_38919_680">
+                    <rect width="11" height="10" fill="white" transform="translate(20.5 20) rotate(180)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
               </div>
             </div>
 
