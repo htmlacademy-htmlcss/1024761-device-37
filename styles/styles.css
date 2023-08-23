@@ -60,30 +60,25 @@ body {
   margin-top: 15px;
 }
 
-.header-logo-image {
-  display: block;
-  margin-bottom: 30px;
+.novigation-logo {
+  display: flex;
+  width: 145px;
+  align-items: flex-start;
   margin-left: 60px;
-}
+  margin-bottom: 30px;
+} 
 
-.header-logo-image:hover {
+.novigation-logo:hover {
   opacity: 0.6;
 }
 
-.header-logo-image:active {
+.novigation-logo:focus {
+  outline: 3px solid #AF4FFF;
+}
+
+.novigation-logo:active {
   opacity: 0.3;
 }
-
-
-.header-logo-image:focus,
-.header-logo-image:focus-within {
-  outline: 2px solid #AF4FFF;
-}
-
-
-.header-logo-image:focus-visible {
-  outline: none;
-} 
 
 .header-container {
   background-color: #ffe17f;
@@ -726,7 +721,7 @@ body {
   background-color: #ffffff;
 }
 
-.details-link-promo {
+.details-link {
   margin-bottom: 50px;
   padding: 10px 5px;
   position: relative;
@@ -749,6 +744,20 @@ body {
   z-index: -1;
 }
 
+.details-link:hover {
+  height: 40px;
+  background-color: #ffe17f;
+}
+
+.details-link:active {
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.details-link:focus {
+  outline: 3px solid #AF4FFF;
+}
+
 .category-list {
   display: grid;
   grid-template-columns: repeat(6, 160px);
@@ -767,8 +776,16 @@ body {
   margin-bottom: 32px;
 }
 
-.category-describe {
-  margin: 0;
+.category-image:hover {
+  background-color: #FFC700;
+}
+
+.category-item:active {
+  opacity: 0.3;
+}
+
+.category-item:focus {
+  outline: 3px solid #AF4FFF;
 }
 
 .category-link {
@@ -781,6 +798,8 @@ body {
   letter-spacing: -0.36px;
   color: #000000;
 }
+
+
 
 .delivery-title {
   font-family: Raleway;
@@ -875,9 +894,8 @@ body {
   display: flex;
 }
 
-
 .item-delivery {
-  background-image: url(../images/service-man.svg);
+  background-image: url("../images/service-man.svg");
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 204px;
@@ -889,7 +907,7 @@ body {
 }
 
 .item-garant {
-  background-image: url(../images/service-garant.svg);
+  background-image: url("../images/service-garant.svg");
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 239px;
@@ -901,7 +919,7 @@ body {
 }
 
 .item-credit {
-  background-image: url(../images/service-credit.svg);
+  background-image: url("../images/service-credit.svg");
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 204px;
@@ -942,7 +960,6 @@ body {
 .describe-item.non-active {
   display: none;
 }
-
 
 .special-block {
   background-color: #f0f0f0;
@@ -1223,9 +1240,30 @@ body {
   padding: 18px 39px 18px 39px;
 }
 
+.subscribe-button:hover {
+  border: 3px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.subscribe-button:active {
+  border: 3px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.subscribe-button:focus {
+  outline: 3px solid #AF4FFF;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.3;
+}
+
 .subscribe-free {
   padding-left: 32px;
-  background-image: url(../images/tick.svg);
+  background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
   background-position: center left;
 }
@@ -1244,7 +1282,20 @@ body {
 
 .footer-logo {
   margin-bottom: 35px;
-  display: block;
+  width: 145px;
+  display: flex;
+}
+
+.footer-logo-image:hover {
+  opacity: 0.6;
+}
+
+.footer-logo-image:active {
+  opacity: 0.3;
+}
+
+.footer-logo-image:focus {
+  outline: 1px solid #AF4FFF;
 }
 
 .footer-contact-wraper {
@@ -1256,7 +1307,6 @@ body {
   width: 1160px;
 }
 
-
 .footer-contacts-address {
   font-size: 16px;
   font-style: normal;
@@ -1264,8 +1314,6 @@ body {
   line-height: 20px;
   margin: 0;
 }
-
-
 
 .footer-item {
   margin: 0;
@@ -1292,8 +1340,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
-
 
 .footer-contact-phone {
   font-size: 16px;
@@ -1671,6 +1717,22 @@ body {
   color: #000000;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 1px solid #AF4FFF;
+}
+
+.breadcrumbs-item:focus {
+  outline: 1px solid #AF4FFF;
+}
+
 .catalog-monopod {
   background-color: #f0f0f0;
 }
@@ -1748,6 +1810,22 @@ body {
   padding: 70px 40px 0 40px;
   margin-bottom: 44px;
 }
+
+.card-item-new {
+  position: relative;
+}
+
+.card-item-new:before {
+  content: "";
+  background-image: url("../images/new.svg");
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
 
 .name-wraper {
   display: flex;
@@ -1980,6 +2058,24 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
   margin-bottom: 44px;
+}
+
+.veiw-more:hover {
+  border: 3px solid #000000;
+}
+
+.veiw-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.veiw-more:focus {
+  outline: 3px solid #AF4FFF;
+}
+
+.veiw-more:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
 }
 
 .pogination-wraper {
