@@ -75,7 +75,7 @@
 
       <nav class="novigation-catalog">
         <ul class="novigation-list">
-          <li class="novigation-item">
+          <li class="novigation-item novigation-item-catalog">
             <input class="visually-hidden menu-category-checkbox" id="catalog-product" type="checkbox">
             <label class="header-catalog" for="catalog-product">Каталог товаров</label>
             <ul class="catalog-list">
@@ -289,10 +289,10 @@
             <button class="service-button service-button-active" type="button">Доставка</button>
           </li>
           <li class="service-item">
-            <button class="service-button details-link" type="button">Гарантия</button>
+            <button class="service-button" type="button">Гарантия</button>
           </li>
           <li class="service-item">
-            <button class="service-button details-link" type="button">Кредит</button>
+            <button class="service-button" type="button">Кредит</button>
           </li>
         </ul>
         <div class="service-describe-wraper">
@@ -318,26 +318,27 @@
     </section>
 
     <div class="special-block">
-      <div class="special-icon">
-      </div>
-      <p class="special-order">Доставим редкий товар под заказ</p>
-      <div class="information">
-        <button class="info-button" type="button">
-          <span class="visually-hidden">Условия доставки редкого товара</span>
-          <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3" clip-path="url(#clip0_38602_721)">
-              <path d="M2 0H0V2H2V0Z" fill="black" />
-              <path d="M2 4H0V12H2V4Z" fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_38602_721">
-                <rect width="2" height="12" fill="white" />
+      <a class="special-link" href="#">
+        <div class="special-icon">
+        </div>
+        <p class="special-order">Доставим редкий товар под заказ</p>
+        <div class="information">
+          <button class="info-button" type="button">
+            <span class="visually-hidden">Условия доставки редкого товара</span>
+            <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_11468_3002)">
+              <path d="M2 0H0V2H2V0Z" fill="black"/>
+              <path d="M2 4H0V12H2V4Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_11468_3002">
+              <rect width="2" height="12" fill="white"/>
               </clipPath>
-            </defs>
-          </svg>
-        </button>
-      </div>
+              </defs>
+              </svg>
+          </button>
+        </div>
+      </a>
     </div>
 
 
@@ -404,7 +405,7 @@
     <div class="footer-container">
       <a class="footer-logo" href="#">
         <img class="footer-logo-image" src="images/logo-footer.svg" width="145" height="36"
-          alt="Логотип магазина Девайс">
+          alt="Логотип магазина Девайс.">
       </a>
 
       <div class="footer-contact-wraper">
