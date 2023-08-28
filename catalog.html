@@ -6,18 +6,14 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="main-header">
       <div class="header-container">
-
         <a class="novigation-logo" href="index.html">
           <img class="header-logo-image" src="images/logo-header.svg" width="145" height="36"
             alt="Логотип магазина Девайс.">
         </a>
-
         <div class="user-wraper">
-
           <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-search">Поиск по сайту</label>
             <input class="user-field" id="user-search" type="search" placeholder="Поиск по сайту">
@@ -35,8 +31,7 @@
                 <span class="novigation-user-element">2</span>
               </div>
             </a>
-
-            <div class="popover popover-cart">
+            <div class="popover popover-cart popover-open">
               <div class="popover-content">
                 <h2 class="visually-hidden">Корзина</h2>
                 <div class="popover-product-list">
@@ -74,7 +69,6 @@
             </div>
           </nav>
         </div>
-
         <nav class="novigation-catalog">
           <ul class="novigation-list">
             <li class="novigation-item">
@@ -113,7 +107,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="novigation-item">
               <a class="novigation-link" href="#">Доставка</a>
             </li>
@@ -127,7 +120,6 @@
         </nav>
       </div>
     </header>
-
     <main class="main-inner main-container">
       <header class="inner-header">
         <h1 class="header--inner-title">Моноподы для селфи</h1>
@@ -137,11 +129,9 @@
           <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-link-active">Моноподы для селфи</a></li>
         </ul>
       </header>
-
       <section class="catalog-monopod">
         <div class="catalog-filter">
           <div class="left-column">
-
             <h2 class="visually-hidden">Каталог моноподов</h2>
             <h3 class="filter-title filter-catalog">Фильтр</h3>
             <form class="filter-monopod" action="https://echo.htmlacademy.ru/" method="get">
@@ -164,14 +154,12 @@
                   <span class="max-price">До 5000</span>
                 </div>
               </fieldset>
-
               <fieldset class="catalog-filter-group filter-group-color">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="black" checked>
-
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
@@ -185,14 +173,12 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="blue">
-
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="red">
-
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
@@ -219,14 +205,11 @@
                       <span class="control-label">Нет</span>
                     </label>
                   </li>
-
                 </ul>
               </fieldset>
               <button class="details-link filter-link" type="submit">Показать</button>
             </form>
           </div>
-
-
           <div class="right-column">
             <div class="select-wraper">
               <h3 class="filter-title select-filter">Сортировка</h3>
@@ -268,16 +251,18 @@
                 </a>
               </div>
             </div>
-
             <div class="cards-wraper">
-
               <ul class="product-list">
                 <li class="product-card-item">
                   <a class="product-card-link" href="#">
-                    <div class="image-wraper">
-                      <img class="product-card-image" src="images/product-cards/product-1.jpg" width="360" height="380"
-                        alt="Селфи-палка, соединенная с мобильным телефоном.">
-                      <span class="product-card-button">Подробнее</span>
+                    <div class="image-button-container">
+                      <div class="image-wraper">
+                        <img class="product-card-image" src="images/product-cards/product-1.jpg" width="360"
+                          height="380" alt="Селфи-палка, соединенная с мобильным телефоном.">
+                      </div>
+                      <div class="card-button-wraper">
+                        <div class="product-card-button">Подробнее</div>
+                      </div>
                     </div>
                     <div class="name-wraper">
                       <p class="product-card-describe">Любительская<br> селфи-палка</p>
@@ -287,10 +272,14 @@
                 </li>
                 <li class="product-card-item card-item-new">
                   <a class="product-card-link" href="#">
-                    <div class="image-wraper">
-                      <img class="product-card-image" src="images/product-cards/product-2.jpg" width="360" height="380"
-                        alt="Селфи-палка с черной массивной ручкой.">
-                      <span class="product-card-button">Подробнее</span>
+                    <div class="image-button-container">
+                      <div class="image-wraper">
+                        <img class="product-card-image" src="images/product-cards/product-2.jpg" width="360"
+                          height="380" alt="Селфи-палка с черной массивной ручкой.">
+                      </div>
+                      <div class="card-button-wraper">
+                        <div class="product-card-button">Подробнее</div>
+                      </div>
                     </div>
                     <div class="name-wraper">
                       <p class="product-card-describe">Профессиональная селфи-палка</p>
@@ -300,10 +289,14 @@
                 </li>
                 <li class="product-card-item">
                   <a class="product-card-link" href="#">
-                    <div class="image-wraper">
-                      <img class="product-card-image" src="images/product-cards/product-3.jpg" width="360" height="380"
-                        alt="Селфи-палка, соединенная с экшн-камерой.">
-                      <span class="product-card-button">Подробнее</span>
+                    <div class="image-button-container">
+                      <div class="image-wraper">
+                        <img class="product-card-image" src="images/product-cards/product-3.jpg" width="360"
+                          height="380" alt="Селфи-палка, соединенная с экшн-камерой.">
+                      </div>
+                      <div class="card-button-wraper">
+                        <div class="product-card-button">Подробнее</div>
+                      </div>
                     </div>
                     <div class="name-wraper">
                       <p class="product-card-describe">Непотопляемая<br> селфи-палка</p>
@@ -313,10 +306,14 @@
                 </li>
                 <li class="product-card-item">
                   <a class="product-card-link" href="#">
-                    <div class="image-wraper">
-                      <img class="product-card-image" src="images/product-cards/product-4.jpg" width="360" height="380"
-                        alt="Селфи-палка в виде руки.">
-                      <span class="product-card-button">Подробнее</span>
+                    <div class="image-button-container">
+                      <div class="image-wraper">
+                        <img class="product-card-image" src="images/product-cards/product-4.jpg" width="360"
+                          height="380" alt="Селфи-палка в виде руки.">
+                      </div>
+                      <div class="card-button-wraper">
+                        <div class="product-card-button">Подробнее</div>
+                      </div>
                     </div>
                     <div class="name-wraper">
                       <p class="product-card-describe">Селфи-палка "Следуй<br> за мной"</p>
@@ -325,13 +322,9 @@
                   </a>
                 </li>
               </ul>
-
               <button class="veiw-more" type="button">Загрузить еще</button>
-
-
               <div class="pogination-wraper">
                 <a class="pogination-link pogination-prev pogination-desabled" href="#">Назад</a>
-
                 <ul class="pogination">
                   <li class="pogination-item">
                     <a class="pogination-link pogination-current" href="#">1</a>
@@ -349,30 +342,23 @@
                     <a class="pogination-link" href="#">15</a>
                   </li>
                 </ul>
-
                 <a class="pogination-link pogination-next" href="#">Вперёд</a>
               </div>
-
             </div>
-
           </div>
         </div>
       </section>
     </main>
-
     <footer class="main-footer">
       <div class="footer-container">
         <a class="footer-logo" href="#">
           <img class="footer-logo-img" src="images/logo-footer.svg" width="145" height="36"
             alt="Логотип магазина Девайс">
         </a>
-
         <div class="footer-contact-wraper">
-
           <address class="footer-contacts">
             <p class="footer-contacts-address">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
           </address>
-
           <ul class="footer-list">
             <li class="footer-item">
               <a class="footer-link" href="#">Доставка</a>
@@ -384,12 +370,9 @@
               <a class="footer-link" href="#">Контакты</a>
             </li>
           </ul>
-
           <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
-
         <div class="footer-social-wraper">
-
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-item-link" href="https://t.me/htmlacademy">
@@ -451,8 +434,6 @@
               </a>
             </li>
           </ul>
-
-
           <a class="developer-link" aria-hidden="true" href="https://htmlacademy.ru">
             <svg class="developer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -494,9 +475,6 @@
           </a>
         </div>
       </div>
-
     </footer>
-
   </body>
-
 </html>
