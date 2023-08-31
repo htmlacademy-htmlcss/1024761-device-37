@@ -111,9 +111,18 @@ body {
   background-position: center left 16px;
 }
 
+.user-field:focus-visible {
+  outline: none;
+}
+
 .novigation-user {
   display: flex;
   justify-content: space-between;
+}
+
+.input-wraper:focus-within {
+  outline: 2px solid #AF4FFF;
+  padding: 2px;
 }
 
 .user-wraper {
@@ -164,6 +173,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.bag-container {
+  position: relative;
+}
+
 .control-bag {
   padding-left: 25px;
   background-image: url("../images/bag.svg");
@@ -200,9 +213,9 @@ body {
 
 .popover {
   position: absolute;
-  top: 128px;
-  right: 80px;
-  z-index: 5;
+  top: 35px;
+  right: -82px;
+  z-index: 6;
   width: 320px;
   background-color: #000000;
   font-family: Rubik;
@@ -335,7 +348,7 @@ body {
 }
 
 .popover-button:active {
-   opacity: 0.3;
+  opacity: 0.3;
 }
 
 .form-user-button {
@@ -364,6 +377,15 @@ body {
   opacity: 0.3;
 }
 
+.form-user-button:focus-visible {
+ outline: none;
+}
+
+.form-button-wraper:focus-within {
+  outline: 2px solid #AF4FFF;
+  padding: 2px;
+}
+
 .catalog-link {
   text-decoration: none;
   color: #000000;
@@ -374,6 +396,18 @@ body {
   line-height: 18px;
 }
 
+.catalog-link:hover {
+  opacity: 0.6;
+}
+.catalog-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.catalog-link:active {
+  opacity: 0.3;
+}
+
+
 .novigation-user-enter {
   width: 81px;
   padding-left: 27px;
@@ -382,7 +416,6 @@ body {
   background-position: center left;
   margin-right: 150px;
 }
-
 
 .novigation-servis-list {
   list-style-type: none;
@@ -444,8 +477,8 @@ body {
   opacity: 0.3;
 }
 
-.header-catalog:hover:after,
-.header-catalog:active:after {
+.header-catalog:hover::after,
+.header-catalog:active::after {
   opacity: 1;
 }
 
@@ -458,11 +491,6 @@ body {
 .menu-category-checkbox:checked+.header-catalog:hover::after,
 .menu-category-checkbox:checked+.header-catalog:active::after {
   opacity: 1;
-}
-
-
-.menu-category-checkbox {
-  outline: none;
 }
 
 .novigation-item-catalog:focus-within {
@@ -490,13 +518,8 @@ body {
   position: relative;
 }
 
-.novigation-item:focus-within .catalog-list{
-  display: block;
-}
-
 .novigation-link {
   font-family: Raleway;
-
   font-style: normal;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -574,24 +597,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 211px;
-}
-
-.catalog-link {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.catalog-link:hover {
-  opacity: 0.6;
-}
-.catalog-link:focus {
-  outline: 2px solid #AF4FFF;
-}
-
-.catalog-link:active {
-  opacity: 0.3;
 }
 
 .catalog-item {
@@ -965,7 +970,7 @@ body {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding: 0 10px;
+  padding: 10px 0;
   background-color: transparent;
   position: relative;
   display: flex;
@@ -1020,6 +1025,11 @@ body {
 .service-button-active {
   color: #ffe17f;
   background-color: #000000;
+  transition: 500ms;
+}
+
+.service-button-active:hover {
+  transform: translateX(25px);
 }
 
 .service-describe-list {
@@ -1721,7 +1731,6 @@ body {
 }
 
 .modal-field {
-  width: 100%;
   padding: 20px;
   font-family: Rubik;
   font-size: 16px;
@@ -1823,9 +1832,11 @@ body {
   text-transform: none;
   width: 200px;
   padding: 19px;
-  top: 100%;
+  top: 25px;
+  right: -20px;
   margin-top: 10px;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .tooltip-text::before {
@@ -1891,6 +1902,19 @@ body {
   background-color: #FFE17F;
   position: absolute;
   z-index: -1;
+  transition: 500ms;
+}
+
+.modal-form-button:hover::after {
+  height: 100%;
+}
+
+.modal-form-button:active::after {
+  background-color: #FFCC33;
+}
+
+.modal-form-button:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 
@@ -2006,6 +2030,7 @@ body {
   border: 2px solid #000000;
   transform: translateY(-50%);
   top: 50%;
+  cursor: pointer;
 }
 
 .toggle-min {
@@ -2146,13 +2171,14 @@ body {
 .control-input[type="radio"]:checked::before {
   content: " ";
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #000000;
   right: 5px;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
+  left: 50%;
 }
 
 .control-label {
