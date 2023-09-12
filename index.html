@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
@@ -78,8 +80,8 @@
       <nav class="novigation-catalog">
         <ul class="novigation-list">
           <li class="novigation-item">
-            <label class="header-catalog" for="catalog-product">Каталог товаров</label>
             <input class="visually-hidden menu-category-checkbox" id="catalog-product" type="checkbox">
+            <label class="header-catalog" for="catalog-product">Каталог товаров</label>
             <ul class="catalog-list">
               <li class="catalog-column-1">
                 <ul class="catalog-list-1">
@@ -155,7 +157,7 @@
           <div class="promo-discribe">
             <div class="slide-text slide-1 active">
               <span class="slide-number">01</span>
-              <h3 class="promo-title">Порхает как бабочка, жалит как пчела</h3>
+              <h3 class="promo-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="about-promo">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным
                 под стандартную камеру.</p>
@@ -209,19 +211,25 @@
         </div>
         <ol class="slider-pogination">
           <li class="slider-pogination-item">
-            <button class="slider-pogination-button slider-pogination-button-current" type="button">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
+            <div class="slider-button-focus">
+              <button class="slider-pogination-button slider-pogination-button-current" type="button">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+            </div>
           </li>
           <li class="slider-pogination-item">
-            <button class="slider-pogination-button" type="button">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
+            <div class="slider-button-focus">
+              <button class="slider-pogination-button" type="button">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+            </div>
           </li>
           <li class="slider-pogination-item">
-            <button class="slider-pogination-button" type="button">
-              <span class="visually-hidden">Слайд 3</span>
-            </button>
+            <div class="slider-button-focus">
+              <button class="slider-pogination-button" type="button">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </div>
           </li>
         </ol>
       </div>
