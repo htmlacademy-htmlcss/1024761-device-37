@@ -275,6 +275,13 @@ body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.product-wraper:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .delete-item {
@@ -283,9 +290,13 @@ body {
   background-color: transparent;
   background-image: url("../images/delete.svg");
   background-repeat: no-repeat;
-  text-align: center;
+  padding: 0;
   border: none;
   cursor: pointer;
+}
+
+.delete-item:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .item-text-popover {
@@ -295,6 +306,7 @@ body {
   line-height: 20px;
   margin: 0;
   margin-left: 23px;
+
 }
 
 .popover-content .total {
@@ -494,6 +506,10 @@ body {
   opacity: 1;
 }
 
+.navigation-item:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .menu-category-checkbox:checked+.header-catalog::after {
   background-image: url("../images/minus.svg");
   border: none;
@@ -502,10 +518,6 @@ body {
 .menu-category-checkbox:checked+.header-catalog:hover::after,
 .menu-category-checkbox:checked+.header-catalog:active::after {
   opacity: 1;
-}
-
-.navigation-item-catalog:focus-within {
-  outline: 2px solid #AF4FFF;
 }
 
 .navigation-list {
@@ -529,6 +541,7 @@ body {
   position: relative;
 }
 
+
 .navigation-link {
   font-family: Raleway;
   font-style: normal;
@@ -551,7 +564,7 @@ body {
   opacity: 0.3;
 }
 
-.menu-category-checkbox:checked~.catalog-list {
+.menu-category-checkbox:checked~ .catalog-list {
   position: absolute;
   display: flex;
   margin: 0;
@@ -2241,10 +2254,20 @@ outline: none;
 
 .form-price {
   font-size: 14px;
+  border: none;
+  background-color: transparent;
+  width: 55px;
+  height: 20px;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.form-price:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .min-price {
-  margin-right: 76px;
+  margin-right: 50px;
 }
 
 .catalog-filter-group {
