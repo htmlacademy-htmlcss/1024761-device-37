@@ -1065,14 +1065,15 @@ body {
 }
 
 .special-block {
-  background-image: linear-gradient(to right, #FFE17F 11%, #F0F0F0 11%);
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
-}
-
-.special-link:focus-visible {
-  outline: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  background-color: #f0f0f0;
+  position: relative;
 }
 
 .special-link {
@@ -1081,21 +1082,9 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  width: 1160px;
+  width: 910px;
   justify-content: center;
 }
-
-/*
-.special-icon {
-  width: 125px;
-  align-self: center;
-  background-color: #ffe17f;
-  background-image: url("../images/car.svg");
-  background-repeat: no-repeat;
-  min-height: 100px;
-  background-position: center;
-}
-*/
 
 .special-order {
   text-align: center;
@@ -1111,17 +1100,21 @@ body {
   padding-bottom: 40px;
   padding-left: 40px;
   margin: 0;
-  width: 997px;
+}
+
+.special-block::before {
+  content: "";
+  width: 125px;
+  height: 100px;
+  position: absolute;
+  background-color: #FFE17F;
   background-image: url("../images/car.svg");
   background-repeat: no-repeat;
-  background-position: left;
-}
+  background-position: center;
+  left: 0;
 
-.information {
-  display: flex;
-  justify-content: center;
 }
-
+  
 .info-button {
   border: none;
   width: 40px;
@@ -1130,6 +1123,7 @@ body {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  margin: 30px 42px 30px 42px;
 }
 
 .info-icon {
@@ -2461,6 +2455,7 @@ outline: none;
   display: flex;
   flex-direction: column;
   gap: 29px;
+  position: relative;
 }
 
 .image-button-container {
@@ -2477,7 +2472,7 @@ outline: none;
   opacity: 0.3;
 }
 
-.product-card-link:hover .image-wrapper {
+.product-card-link:hover .product-card-image {
   opacity: 0.6;
 }
 
@@ -2540,11 +2535,6 @@ outline: none;
   color: #444444;
   font-weight: 400;
   margin: 0;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 360px;
 }
 
 .view-more {
