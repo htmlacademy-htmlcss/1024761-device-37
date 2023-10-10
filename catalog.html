@@ -27,49 +27,51 @@
           </div>
         </form>
         <nav class="navigation-user-catalog">
-          <a class="user-control navigation-user-name" href="#">Коля Петухов</a>
-          <a class="user-control navigation-user-exit" href="#">Выйти</a>
-        </nav>
-        <nav class="user-control-wrapper">
-          <a class="user-control control-compare" href="#">Сравнить</a>
-          <div class="bag-container">
-            <a class="user-control control-bag" href="#">
-              <span>Корзина</span>
-              <span class="background-element">2</span>
-            </a>
-            <div class="popover popover-cart popover-open">
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <div class="popover-product-list">
-                  <ul class="popover-list">
-                    <li class="popover-item">
-                      <a class="product-wrapper" href="#">
-                        <img class="item-image" src="images/popover-1.png" width="39" height="43"
-                          alt="Мобильный телефон на палке.">
-                        <p class="item-text-popover">Любительская<br> селфи-палка</p>
-                      </a>
-                      <button class="delete-item" type="button">
-                        <span class="visually-hidden">Удалить товар</span>
-                      </button>
-                    </li>
-                    <li class="popover-item">
-                      <a class="product-wrapper" href="#">
-                        <img class="item-image" src="images/popover-2.png" width="39" height="43"
-                          alt="Селфи-палка черного цвета.">
-                        <p class="item-text-popover">Профессиональная <br>селфи-палка</p>
-                      </a>
-                      <button class="delete-item" type="button">
-                        <span class="visually-hidden">Удалить товар</span>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="total">
-                  <p class="total-product">Товаров: 2</p>
-                  <p class="total-price">Сумма: 2000 P</p>
-                </div>
-                <div class="popover-link">
-                  <a class="popover-button" href="#">Открыть корзину</a>
+          <div class="for-user">
+            <a class="user-control navigation-user-name" href="#">Коля Петухов</a>
+            <a class="user-control navigation-user-exit" href="#">Выйти</a>
+          </div>
+          <div class="user-choose">
+            <a class="user-control control-compare" href="#">Сравнить</a>
+            <div class="bag-container">
+              <a class="user-control control-bag" href="#">
+                <span>Корзина</span>
+                <span class="background-element">2</span>
+              </a>
+              <div class="popover popover-cart popover-open">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <div class="popover-product-list">
+                    <ul class="popover-list">
+                      <li class="popover-item">
+                        <a class="product-wrapper" href="#">
+                          <img class="item-image" src="images/popover-1.png" width="39" height="43"
+                            alt="Мобильный телефон на палке.">
+                          <p class="item-text-popover">Любительская<br> селфи-палка</p>
+                        </a>
+                        <button class="delete-item" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                      <li class="popover-item">
+                        <a class="product-wrapper" href="#">
+                          <img class="item-image" src="images/popover-2.png" width="39" height="43"
+                            alt="Селфи-палка черного цвета.">
+                          <p class="item-text-popover">Профессиональная <br>селфи-палка</p>
+                        </a>
+                        <button class="delete-item" type="button">
+                          <span class="visually-hidden">Удалить товар</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="total">
+                    <p class="total-product">Товаров: 2</p>
+                    <p class="total-price">Сумма: 2000 P</p>
+                  </div>
+                  <div class="popover-link">
+                    <a class="popover-button" href="#">Открыть корзину</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,38 +81,25 @@
       <nav class="navigation-catalog">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <input class="visually-hidden menu-category-checkbox" id="catalog-product" type="checkbox">
-            <label class="header-catalog" for="catalog-product">Каталог товаров</label>
+            <a class="header-catalog">Каталог товаров</a>
             <ul class="catalog-list">
-              <li class="catalog-column-1">
-                <ul class="catalog-list-1">
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link active-page" href="#">Моноподы для селфи</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Виртуальная реальность</a>
               </li>
-              <li class="catalog-column-2">
-                <ul class="catalog-list-2">
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Умные часы</a>
-                  </li>
-                </ul>
+              <li class="catalog-item">
+                <a class="catalog-link" href="catalog.html">Фитнес-браслеты </a>
               </li>
-              <li class="catalog-column-3">
-                <ul class="catalog-list-3">
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Квадрокоптеры </a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog-item action">
+                <a class="catalog-link" href="#">Экшн-камеры</a>
               </li>
             </ul>
           </li>
@@ -166,7 +155,7 @@
               </div>
             </fieldset>
             <fieldset class="catalog-filter-group filter-group-color">
-              <legend class="catalog-filter-title">Цвет</legend>
+              <legend class="catalog-filter-title title-filter">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -202,7 +191,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group filter-group-bluetooth">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+              <legend class="catalog-filter-title title-filter">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item filter-item-price">
                   <label class="control control-radio">
@@ -347,7 +336,8 @@
   <footer class="main-footer">
     <div class="footer-container">
       <a class="footer-logo" href="#">
-        <img class="footer-logo-img" src="images/logo-footer.svg" width="145" height="36" alt="Логотип магазина Девайс">
+        <img class="footer-logo-image" src="images/logo-footer.svg" width="145" height="36"
+          alt="Логотип магазина Девайс.">
       </a>
       <div class="footer-contact-wrapper">
         <address class="footer-contacts">
@@ -366,7 +356,7 @@
         </ul>
         <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
-      <div class="footer-social-wrapper">
+      <div class="social-developer-wrapper">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-item-link" href="https://t.me/htmlacademy">
@@ -468,7 +458,6 @@
           <span class="visually-hidden">Логотип HTML-academy</span>
         </a>
       </div>
-    </div>
   </footer>
 </body>
 

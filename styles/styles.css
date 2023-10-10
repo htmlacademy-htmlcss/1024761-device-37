@@ -92,7 +92,7 @@ body {
 .user-form {
   display: flex;
   width: 517px;
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .user-form-catalog {
@@ -179,7 +179,7 @@ body {
 }
 
 .control-bag {
-  padding-left: 25px;
+  padding-left: 26px;
   background-image: url("../images/bag.svg");
   background-repeat: no-repeat;
   background-position: center left;
@@ -594,7 +594,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .image-button-wrapper {
@@ -676,7 +676,7 @@ body {
   width: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .slider-button-focus:focus-within  {
@@ -735,7 +735,7 @@ body {
   width: 1160px;
   justify-content: space-between;
   margin: 0 auto;
-  background-image: linear-gradient(#ffe17f 26%, #ffffff 26%);
+  background-image: linear-gradient(#ffe17f 27%, #ffffff 27%);
   margin-top: -32px;
 }
 
@@ -1082,7 +1082,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  width: 910px;
+  width: 1160px;
   justify-content: center;
 }
 
@@ -1098,21 +1098,20 @@ body {
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 40px;
-  margin: 0;
+  padding-left: 125px;
+  margin: 0 auto;
 }
 
-.special-block::before {
+.special-link::before {
   content: "";
   width: 125px;
   height: 100px;
   position: absolute;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-image: url("../images/car.svg");
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
-
 }
   
 .info-button {
@@ -1131,7 +1130,7 @@ body {
   width: 40px;
 }
 
-.special-link:hover .special-icon {
+.special-link:hover::before {
   background-color: #ffc700;
 }
 
@@ -1139,16 +1138,12 @@ body {
   opacity: 1;
 }
 
-.special-link:focus .info-button {
-  outline: none;
-}
-
 .special-link:active {
   opacity: 0.3;
 }
 
-.special-link:focus .special-block {
-  outline: #AF4FFF;
+.special-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .about-container {
@@ -1637,7 +1632,7 @@ outline: none;
   background-color: #ffc700;
   left: 0;
   transform: translateY(-50%);
-  top: 50%
+  top: 40%
 }
 
 .developer-link:hover path {
@@ -1981,7 +1976,17 @@ outline: none;
 .navigation-user-catalog {
   display: flex;
   justify-content: space-between;
-  width: 230px;
+  width: 496px;
+}
+
+.for-user {
+  display: flex;
+  width: 281px;
+}
+
+.user-choose {
+  display: flex;
+  width: 240px;
 }
 
 .navigation-user-exit {
@@ -1993,6 +1998,7 @@ outline: none;
   background-image: url("../images/user.svg");
   background-repeat: no-repeat;
   background-position: center left;
+  margin-right: 28px;
 }
 
 .inner-header {
@@ -2079,10 +2085,10 @@ outline: none;
 
 .range-scale {
   position: relative;
-  height: 4px;
+  height: 2px;
   background-color: #000000;
   width: 200px;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .range-toggle {
@@ -2138,7 +2144,7 @@ outline: none;
 
 .range-bar {
   position: absolute;
-  height: 4px;
+  height: 2px;
   background-color: #dcdcdc;
   width: 81px;
   right: 0;
@@ -2158,7 +2164,7 @@ outline: none;
   width: 55px;
   height: 20px;
   padding: 0;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .form-price:focus {
@@ -2171,7 +2177,7 @@ outline: none;
 
 .catalog-filter-group {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   padding: 0;
   border: none;
 }
@@ -2189,7 +2195,7 @@ outline: none;
   column-gap: 40px;
   row-gap: 44px;
   padding: 70px 40px 0 40px;
-  margin-bottom: 38px;
+  margin-bottom: 43px;
 }
 
 .card-item-new {
@@ -2241,7 +2247,7 @@ outline: none;
 .filter-catalog {
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .control-input[type="checkbox"] {
@@ -2354,14 +2360,19 @@ outline: none;
 }
 
 .catalog-filter-title {
+  padding: 0;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
   color: #000000;
-  margin-bottom: 23px;
+  margin-bottom: 28px;
   width: 200px;
   padding-top: 12px;
-  border-top: 4px solid #000000;
+  border-top: 2px solid #000000;
+}
+
+.title-filter {
+  margin-bottom: 20px;
 }
 
 .catalog-filter-list {
@@ -2454,7 +2465,7 @@ outline: none;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 33px;
   position: relative;
 }
 
@@ -2553,8 +2564,8 @@ outline: none;
   min-width: 171px;
   width: 760px;
   border: 3px solid #e5e5e5;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 44px;
 }
 
@@ -2640,6 +2651,6 @@ outline: none;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
-  padding: 25px;
+  padding: 22px;
   opacity: 1;
 }
