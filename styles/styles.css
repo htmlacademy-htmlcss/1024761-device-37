@@ -208,8 +208,8 @@ body {
 
 .popover {
   position: absolute;
-  top: 35px;
-  right: -82px;
+  top: 37px;
+  right: -76px;
   z-index: 6;
   width: 320px;
   background-color: #000000;
@@ -262,7 +262,7 @@ body {
 .product-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
@@ -318,7 +318,6 @@ body {
 
 .total-price {
   margin: 0;
-  min-width: 150px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -335,13 +334,13 @@ body {
   text-align: center;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding: 14px 25px 14px 25px;
+  padding: 14px 22px 14px 23px;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -471,11 +470,6 @@ body {
 }
 
 .header-catalog::after {
-  background-image: url("../images/minus.svg");
-  border: none;
-}
-
-.header-catalog::after {
   display: inline-block;
   content: " ";
   width: 50px;
@@ -498,7 +492,7 @@ body {
 }
 
 .navigation-item:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .header-catalog:hover::after,
@@ -526,6 +520,7 @@ body {
 
 .header-catalog:focus {
   outline: 2px solid #af4fff;
+  z-index: 11;
 }
 
 .navigation-item:not(:first-child, :last-child) {
@@ -533,8 +528,12 @@ body {
 }
 
 .navigation-item {
-  position: relative;
   z-index: 1;
+}
+
+.main-catalog {
+  position: relative;
+  z-index: 6;
 }
 
 .navigation-link {
@@ -569,18 +568,18 @@ body {
   display: grid;
   grid-template-columns: 222px 181px 211px;
   grid-template-rows: repeat(3, 18px);
-  column-gap: 30px;
-  row-gap: 20px;
+  column-gap: 31px;
+  row-gap: 18px;
   min-height: 120px;
   list-style-type: none;
-  padding: 33px 427px 27px 59px;
+  padding: 15px 425px 27px 59px;
   margin: 0;
   position: absolute;
+  z-index: 10;
   left: -59px;
   display: none;
   background-color: #ffe17f;
 }
-
 
 .action {
   grid-column: 1 / 2;
@@ -693,7 +692,6 @@ body {
   outline: 2px solid #af4fff;
 }
 
-
 .slider-pаgination-button-current {
   background-color: #000000;
 }
@@ -769,7 +767,6 @@ body {
 .promo-title {
   margin: 0;
   margin-bottom: 29px;
-  z-index: 2;
   position: relative;
 }
 
@@ -947,7 +944,7 @@ body {
 
 .service-item .service-button:active::after {
   height: 100%;
-  background-color: #FFCC33;
+  background-color: #ffcc33;
 }
 
 .service-button:focus-visible {
@@ -1115,7 +1112,7 @@ body {
 .special-link::before {
   content: "";
   width: 125px;
-  height: 100px;
+  height: 100%;
   position: absolute;
   background-color: #ffe17f;
   background-image: url("../images/car.svg");
@@ -1153,7 +1150,7 @@ body {
 }
 
 .special-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 .about-container {
@@ -1354,7 +1351,7 @@ body {
 .subscribe {
   background-color: #f0f0f0;
   padding-bottom: 56px;
-  padding-top: 70px;
+  padding-top: 64px;
 }
 
 .subscribe-total-wrapper {
@@ -1367,8 +1364,8 @@ body {
   margin: 0 auto;
   width: 1160px;
   justify-content: space-between;
-  margin-bottom: 136px;
-  align-items: center;
+  margin-bottom: 144px;
+  align-items: flex-end;
   margin-left: 5px;
 }
 
@@ -1426,7 +1423,7 @@ body {
   text-transform: uppercase;
   min-width: 253px;
   border:  2px solid #c4c4c4;
-  padding: 18px 39px 18px 39px;
+  padding: 16px 39px 16px 39px;
 }
 
 .subscribe-button:hover {
@@ -1448,11 +1445,13 @@ body {
   opacity: 0.3;
 }
 
-.subscribe-free {
-  padding-left: 32px;
-  background-image: url("../images/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center left;
+.subscribe-free::before {
+  content: url("../images/tick.svg");
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  line-height: 16px;
 }
 
 .main-footer {
@@ -1553,11 +1552,13 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 20px;
   text-decoration-line: underline;
   color: #ffffff;
-  display: block;
   width: 175px; 
+  align-self: center;
+  display: block;
+  margin-bottom: 3px;
 }
 
 .footer-contact-phone:hover {
@@ -1654,7 +1655,7 @@ outline: none;
 }
 
 .developer-link:focus {
-  outline: 1px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 /*Modal*/
@@ -1872,7 +1873,7 @@ outline: none;
   display: none;
   background-color: #000000;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1942,7 +1943,7 @@ outline: none;
 }
 
 .modal-form-button {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -2023,7 +2024,7 @@ outline: none;
 
 .header--inner-title {
   margin: 0;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -2240,7 +2241,7 @@ outline: none;
 }
 
 .filter-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: normal;
   letter-spacing: 3.2px;
@@ -2496,31 +2497,28 @@ outline: none;
   opacity: 0.6;
 }
 
-.product-card-link:hover .card-button-wrapper {
-  display: block;
+.product-card-link:hover .product-card-button {
+  opacity: 1;
 }
 
 .product-card-link:focus {
   outline: 2px solid #af4fff;
 }
 
-.card-button-wrapper {
+.product-card-button {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 50%;
-  display: none;
-}
-
-.product-card-button {
+  top: 170px;
   width: 220px;
   height: 40px;
   display: flex;
+  opacity: 0;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: transparent;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -2559,7 +2557,7 @@ outline: none;
 
 .view-more {
   text-align: center;
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -2631,7 +2629,7 @@ outline: none;
 }
 
 .pagination-prev {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: normal;
   letter-spacing: 3.6px;
@@ -2653,7 +2651,7 @@ outline: none;
 }
 
 .pagination-next {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: normal;
